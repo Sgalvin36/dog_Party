@@ -44,6 +44,10 @@ li a {
     background-image: linear-gradient(rgba(0,0,0, 0.527), rgba(0,0,0,0.5)), url("assets/park.jpg");
     background-size: cover;
     color: #ffffff;
+    /* display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; */
 }
 
 .hero h1 {
@@ -56,6 +60,8 @@ li a {
 .hero img {
     border-radius: 50%;
     margin: 20px 0;
+    max-width: 25%;
+    height: auto;
 }
 
 .hero form {
@@ -67,12 +73,19 @@ li a {
 
 .hero button {
     padding: 10px 20px;
-    background-color: #190390;
-    color: #ffffff;
+    background-color: #75e2e6;
+    color: #000000;
     border: none;
     cursor: pointer;
 }
-
+.hero label {
+    align-self:baseline;
+    width: 75%;
+}
+.hero button, input {
+    width: 30%;
+    height: 2.5em;
+}
 .info-boxes {
     display: flex;
     flex-direction: row;
